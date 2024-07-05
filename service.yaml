@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wil-service
+spec:
+  selector:
+    app: wil # Matches the Deployment's selector
+  ports:
+  - protocol: TCP
+    port: 80  # Host port (you can choose any available port)
+    targetPort: 8888  # Maps to the container port
