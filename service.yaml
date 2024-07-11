@@ -7,5 +7,5 @@ spec:
     app: wil # Matches the Deployment's selector
   ports:
   - protocol: TCP
-    port: 80  # Host port (you can choose any available port)
+    port: 8888 # Host port (you can choose any available port)
     targetPort: 8888  # Maps to the container port
